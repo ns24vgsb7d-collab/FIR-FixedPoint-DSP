@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Subsystem_bd": {
+			"proto_instances": {
+			}
+		}
+	}
+}

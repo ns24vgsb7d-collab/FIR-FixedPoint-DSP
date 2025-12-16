@@ -1,0 +1,537 @@
+
+*** Running vivado
+    with args -log Subsystem_bd_Subsystem_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Subsystem_bd_Subsystem_1_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Subsystem_bd_Subsystem_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1002.918 ; gain = 118.812
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.runs/Subsystem_bd_Subsystem_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Subsystem_bd_Subsystem_1_0
+Command: synth_design -top Subsystem_bd_Subsystem_1_0 -part xc7k160tfbg676-3 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tfbg676-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18144
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1850.562 ; gain = 407.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Subsystem_bd_Subsystem_1_0' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/synth/Subsystem_bd_Subsystem_1_0.vhd:75]
+INFO: [Synth 8-3491] module 'subsystem' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:1069' bound to instance 'U0' of component 'subsystem' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/synth/Subsystem_bd_Subsystem_1_0.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'subsystem' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:1084]
+INFO: [Synth 8-638] synthesizing module 'subsystem_default_clock_driver' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:1049]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'subsystem_default_clock_driver' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:1049]
+INFO: [Synth 8-638] synthesizing module 'subsystem_struct' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'subsystem_xladdsub' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:243]
+INFO: [Synth 8-3491] module 'subsystem_c_addsub_v12_0_i0' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i0/synth/subsystem_c_addsub_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'subsystem_c_addsub_v12_0_i0' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:324]
+INFO: [Synth 8-638] synthesizing module 'subsystem_c_addsub_v12_0_i0' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i0/synth/subsystem_c_addsub_v12_0_i0.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 17 - type: integer 
+	Parameter C_B_WIDTH bound to: 17 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 17 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i1/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i0/synth/subsystem_c_addsub_v12_0_i0.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'subsystem_c_addsub_v12_0_i0' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i0/synth/subsystem_c_addsub_v12_0_i0.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'subsystem_xladdsub' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'subsystem_xladdsub__parameterized0' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:243]
+INFO: [Synth 8-3491] module 'subsystem_c_addsub_v12_0_i1' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i1/synth/subsystem_c_addsub_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'subsystem_c_addsub_v12_0_i1' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'subsystem_c_addsub_v12_0_i1' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i1/synth/subsystem_c_addsub_v12_0_i1.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 17 - type: integer 
+	Parameter C_B_WIDTH bound to: 17 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 17 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i1/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i1/synth/subsystem_c_addsub_v12_0_i1.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'subsystem_c_addsub_v12_0_i1' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_c_addsub_v12_0_i1/synth/subsystem_c_addsub_v12_0_i1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'subsystem_xladdsub__parameterized0' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_7d68ce3850' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_7d68ce3850' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9a52019f1b' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9a52019f1b' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'subsystem_xldelay' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:98]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:31]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'subsystem_xldelay' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'subsystem_xlmult' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:487]
+INFO: [Synth 8-3491] module 'subsystem_mult_gen_v12_0_i0' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/synth/subsystem_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'subsystem_mult_gen_v12_0_i0' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:546]
+INFO: [Synth 8-638] synthesizing module 'subsystem_mult_gen_v12_0_i0' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/synth/subsystem_mult_gen_v12_0_i0.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/synth/subsystem_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/synth/subsystem_mult_gen_v12_0_i0.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 31 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_18' declared at 'c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21010' bound to instance 'U0' of component 'mult_gen_v12_0_18' [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/synth/subsystem_mult_gen_v12_0_i0.vhd:118]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'subsystem_mult_gen_v12_0_i0' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/subsystem_mult_gen_v12_0_i0/synth/subsystem_mult_gen_v12_0_i0.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'subsystem_xlmult' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem_entity_declarations.vhd:487]
+INFO: [Synth 8-256] done synthesizing module 'subsystem_struct' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'subsystem' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/subsystem.vhd:1084]
+INFO: [Synth 8-256] done synthesizing module 'Subsystem_bd_Subsystem_1_0' (0#1) [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/synth/Subsystem_bd_Subsystem_1_0.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ipshared/8abf/hdl/xlclockdriver_rd.vhd:212]
+WARNING: [Synth 8-7129] Port CLK in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[47] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[46] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[45] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[44] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[43] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[42] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[41] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[40] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[39] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[38] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[37] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[36] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[35] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[34] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[33] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[32] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[31] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[30] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[29] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[28] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[27] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[26] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[25] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[7] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[6] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[5] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[4] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[3] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[2] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[1] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[0] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[7] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[6] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[5] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[4] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[3] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[2] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[1] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[0] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SUBTRACT in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRY_IN in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[47] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[46] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[45] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[44] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[43] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[42] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[41] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[40] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[39] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[38] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[37] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[36] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[35] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[34] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[33] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[32] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[31] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[30] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[29] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[28] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[27] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[26] in module dsp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2009.688 ; gain = 566.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2027.500 ; gain = 584.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2027.500 ; gain = 584.418
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 2037.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 571 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/constrs/subsystem.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.gen/sources_1/bd/Subsystem_bd/ip/Subsystem_bd_Subsystem_1_0/constrs/subsystem.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.runs/Subsystem_bd_Subsystem_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.runs/Subsystem_bd_Subsystem_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2140.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 208 instances were transformed.
+  FDE => FDRE: 208 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 2140.102 ; gain = 0.020
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.runs/Subsystem_bd_Subsystem_1_0_synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult10/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult3/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult4/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult5/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult6/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult7/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult8/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/mult9/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub10/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub1/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub2/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub3/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub4/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub5/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub6/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub7/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub8/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/subsystem_struct/addsub9/\comp0.core_instance0 . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (subsystem_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module subsystem.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 13     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    55|
+|2     |DSP48E1 |    11|
+|3     |LUT1    |    11|
+|4     |LUT2    |   170|
+|5     |LUT3    |   165|
+|6     |LUT4    |    22|
+|7     |LUT5    |   176|
+|8     |LUT6    |    11|
+|9     |MUXCY   |   176|
+|10    |XORCY   |   187|
+|11    |FDE     |   208|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:15 . Memory (MB): peak = 2140.102 ; gain = 584.418
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2140.102 ; gain = 697.020
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2140.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 637 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2140.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 263 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 55 instances
+  FDE => FDRE: 208 instances
+
+Synth Design complete, checksum: 2acf498d
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:33 . Memory (MB): peak = 2140.102 ; gain = 1100.293
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.runs/Subsystem_bd_Subsystem_1_0_synth_1/Subsystem_bd_Subsystem_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Subsystem_bd_Subsystem_1_0, cache-ID = bd8d9c9606c91018
+INFO: [Coretcl 2-1174] Renamed 173 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gaherere/Desktop/derniereChance/netlist/ip_catalog/subsystem.runs/Subsystem_bd_Subsystem_1_0_synth_1/Subsystem_bd_Subsystem_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Subsystem_bd_Subsystem_1_0_utilization_synth.rpt -pb Subsystem_bd_Subsystem_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 16 07:56:45 2025...
